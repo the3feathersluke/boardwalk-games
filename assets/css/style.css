@@ -23,6 +23,15 @@ h3{
     font-family: var(--secondary-font);
     color: var(--primary-color);
 }
+/* Navbar */
+#navbar {
+background-color: var(--primary-color);
+}
+#navbar .logo{
+width: 30px;
+
+}
+
 /*.container,
 .row {
     border: 2px solid black;
