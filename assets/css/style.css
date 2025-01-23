@@ -68,7 +68,12 @@ h2 {
 #services .card {
     margin-bottom: 1.5rem;
 }
-
+/* Game Libary*/
+#new-games .card, 
+#fav-games .card
+{
+    border: none;
+}
 /*.container,
 .row {
     border: 2px solid black;
@@ -85,6 +90,7 @@ h2 {
     #services .card-body {
         min-height: 191px;
     }
+}
 
     /* Medium devices (small laptops, 992px and up) */
     @media screen and (min-width: 992px) {
