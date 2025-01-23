@@ -5,41 +5,70 @@
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620; /* dark brown */
-    --secondary-color:#aa9581;
-    --highlight-color:#416a8e;
-    --highlight-color-light:#7a9fc2;
+    --primary-color: #3a2620;
+    /* dark brown */
+    --secondary-color: #aa9581;
+    --highlight-color: #416a8e;
+    --highlight-color-light: #7a9fc2;
 }
-.sub-heading-color{
-    color: var(--highlight-color);
-}
+
 /* Global Styles*/
 body {
     font-family: var(--primary-font);
 }
+
 h1,
 h2,
-h3{
+h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+
+}
+
+h1,
+h2 {
     text-transform: uppercase;
 }
-.section{
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
+.section {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 /* Navbar */
 #navbar {
-background-color: var(--primary-color);
+    background-color: var(--primary-color);
 }
-#navbar .logo{
-width: 30px;
+
+#navbar .logo {
+    width: 30px;
 
 }
+
 /* Header */
 #header .lead {
     font-family: var(--secondary-font);
 }
+
+/* Services*/
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
 /*.container,
 .row {
     border: 2px solid black;
@@ -48,3 +77,36 @@ width: 30px;
     border:2px solid white;
     background-color: lightgray;
 }*/
+/* Media queries */
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Make all service cards the same height for consitency */
+    #services .card-body {
+        min-height: 191px;
+    }
+
+    /* Medium devices (small laptops, 992px and up) */
+    @media screen and (min-width: 992px) {
+
+        /* Make all service cards the same height for consitency */
+        #services .card-body {
+            min-height: auto;
+        }
+    }
+    /* Medium devices (XL screens, 1200px and up) */
+    @media screen and (min-width: 1200px) {
+
+        /* Make all service cards the same height for consitency */
+        #services .card-body {
+            min-height: 220px;
+        }
+    }
+    /* Medium devices ( XXL screens, 1400px and up) */
+    @media screen and (min-width: 1400) {
+
+        /* Make all service cards the same height for consitency */
+        #services .card-body {
+            min-height: 195px;
+        }
+    }
